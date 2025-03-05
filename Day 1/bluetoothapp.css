@@ -1,4 +1,4 @@
-body {
+body { 
     text-align: center;
     font-family: Arial, sans-serif;
     background: #333; /* Grey background */
@@ -8,11 +8,12 @@ body {
     flex-direction: column;
     align-items: center;
     height: 100vh;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 /* Title Section with Shared Background */
 .title-section {
-    background: #0c0c0c;  /* Darker grey for the title section */
+    background: #0c0c0c;  
     padding: 20px;
     width: 100%;
     text-align: center;
@@ -82,13 +83,14 @@ button {
     background: #007bff;
     color: white;
     border: none;
-    padding: 20px;
+    padding: 15px;
     margin: 8px;
-    font-size: 24px;
+    font-size: 20px;
     cursor: pointer;
     border-radius: 15px;
     transition: 0.3s;
-    width: 150px;
+    width: 140px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 button:hover {
@@ -103,18 +105,19 @@ button:hover {
     background: rgb(239, 12, 220);
     color: #0b0b0b;    
 }
-#cealBtn{
+#cealBtn {
     background: rgb(239, 12, 220);
     color: #0b0b0b; 
 }
+
 /* Connect Bluetooth Button */
 #connectBtn {
     background: orange;
     color: black;
     font-weight: bold;
-    padding: 20px;
-    font-size: 24px;
-    width: auto;  /* Auto size based on text */
+    padding: 15px;
+    font-size: 20px;
+    width: auto;
     text-align: center;
     border-radius: 15px;
     white-space: nowrap; /* Keeps text in a single line */
@@ -136,4 +139,51 @@ button:hover {
 .controls div {
     display: flex;
     gap: 15px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center;
+    }
+
+    .left-panel,
+    .controls {
+        width: 100%; /* Full width */
+        text-align: center;
+    }
+
+    button {
+        width: 100px; /* Slightly smaller buttons */
+        padding: 12px;
+        font-size: 18px;
+    }
+
+    .light {
+        width: 20px;
+        height: 20px;
+    }
+
+    .main-title {
+        font-size: 22px;
+    }
+
+    .sub-title {
+        font-size: 18px;
+    }
+}
+
+/* Smaller Mobile Screens */
+@media (max-width: 480px) {
+    button {
+        width: 90px;
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .controls div {
+        flex-direction: column;
+        gap: 10px;
+    }
 }
