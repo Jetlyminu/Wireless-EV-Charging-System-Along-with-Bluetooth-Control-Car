@@ -101,13 +101,9 @@ button:hover {
     background: red;
 }
 
-#horn {
+#horn, #cealBtn {
     background: rgb(239, 12, 220);
     color: #0b0b0b;    
-}
-#cealBtn {
-    background: rgb(239, 12, 220);
-    color: #0b0b0b; 
 }
 
 /* Connect Bluetooth Button */
@@ -176,14 +172,22 @@ button:hover {
 
 /* Smaller Mobile Screens */
 @media (max-width: 480px) {
+    .container {
+        flex-direction: column; /* Stack elements */
+        align-items: center;
+    }
+
+    .controls div {
+        flex-direction: column !important;
+        gap: 10px;
+        align-items: center; /* Center buttons */
+        justify-content: center;
+        width: 100%;
+    }
+
     button {
         width: 90px;
         font-size: 16px;
         padding: 10px;
-    }
-
-    .controls div {
-        flex-direction: column;
-        gap: 10px;
     }
 }
