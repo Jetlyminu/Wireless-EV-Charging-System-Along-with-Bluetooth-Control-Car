@@ -97,15 +97,18 @@ button:hover {
     background: #0056b3;
 }
 
-/* Stop button */
 #stop {
     background: red;
 }
 
-/* Horn and special button */
-#horn, #cealBtn {
+#horn {
     background: rgb(239, 12, 220);
     color: #0b0b0b;    
+}
+
+#cealBtn {
+    background: rgb(239, 12, 220);
+    color: #0b0b0b; 
 }
 
 /* Connect Bluetooth Button */
@@ -174,22 +177,31 @@ button:hover {
 
 /* Smaller Mobile Screens */
 @media (max-width: 480px) {
-    .container {
-        flex-direction: column; /* Stack elements */
-        align-items: center;
-    }
-
-    .controls div {
-        flex-direction: column !important;
-        gap: 10px;
-        align-items: center; /* Center buttons */
-        justify-content: center;
-        width: 100%;
-    }
-
     button {
         width: 90px;
         font-size: 16px;
         padding: 10px;
+    }
+
+    .controls div {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* Landscape Mode on Mobile */
+@media (max-width: 768px) and (orientation: landscape) {
+    .container {
+        flex-direction: row; /* Place panels side by side */
+        justify-content: space-around;
+        align-items: center;
+    }
+    .left-panel,
+    .controls {
+        width: 45%;
+        text-align: center;
+    }
+    button {
+        width: 100px; /* Adjust button width if necessary */
     }
 }
