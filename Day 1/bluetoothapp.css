@@ -189,19 +189,32 @@ button:hover {
     }
 }
 
-/* Landscape Mode on Mobile */
+/* Enhanced Landscape Mode on Mobile */
+/* This query further reduces sizes for an optimal view when devices are in landscape */
 @media (max-width: 768px) and (orientation: landscape) {
     .container {
-        flex-direction: row; /* Place panels side by side */
+        flex-direction: row; /* Panels side by side */
         justify-content: space-around;
         align-items: center;
     }
     .left-panel,
     .controls {
-        width: 45%;
+        width: 48%;
         text-align: center;
     }
+    .main-title {
+        font-size: 20px;
+    }
+    .sub-title {
+        font-size: 16px;
+    }
     button {
-        width: 100px; /* Adjust button width if necessary */
+        width: 80px;
+        padding: 8px;
+        font-size: 14px;
+    }
+    .light {
+        width: 18px;
+        height: 18px;
     }
 }
