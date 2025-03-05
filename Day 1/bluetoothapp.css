@@ -97,10 +97,12 @@ button:hover {
     background: #0056b3;
 }
 
+/* Stop button */
 #stop {
     background: red;
 }
 
+/* Horn and special button */
 #horn, #cealBtn {
     background: rgb(239, 12, 220);
     color: #0b0b0b;    
