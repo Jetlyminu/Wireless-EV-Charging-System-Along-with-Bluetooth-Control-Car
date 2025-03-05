@@ -1,0 +1,139 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background: #333; /* Grey background */
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Title Section with Shared Background */
+.title-section {
+    background: #0c0c0c;  /* Darker grey for the title section */
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Main Title */
+.main-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Subtitle */
+.sub-title {
+    font-size: 22px;
+    color: #ddd;
+}
+
+/* Container for Controls and Lights */
+.container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+/* Left Panel (Lights & Horn) */
+.left-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+}
+
+/* Box around lights */
+.light-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #222;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Light indicators */
+.light {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+.front-light {
+    background: yellow;
+    box-shadow: 0 0 10px yellow;
+}
+
+.back-light {
+    background: red;
+    box-shadow: 0 0 10px red;
+}
+
+/* Buttons */
+button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 20px;
+    margin: 8px;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: 0.3s;
+    width: 150px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+#stop {
+    background: red;
+}
+
+#horn {
+    background: rgb(239, 12, 220);
+    color: #0b0b0b;    
+}
+#cealBtn{
+    background: rgb(239, 12, 220);
+    color: #0b0b0b; 
+}
+/* Connect Bluetooth Button */
+#connectBtn {
+    background: orange;
+    color: black;
+    font-weight: bold;
+    padding: 20px;
+    font-size: 24px;
+    width: auto;  /* Auto size based on text */
+    text-align: center;
+    border-radius: 15px;
+    white-space: nowrap; /* Keeps text in a single line */
+    transition: 0.3s;
+}
+
+#connectBtn:hover {
+    background: #ff9800; /* Slightly darker orange on hover */
+}
+
+/* Controls positioning */
+.controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+}
+
+.controls div {
+    display: flex;
+    gap: 15px;
+}

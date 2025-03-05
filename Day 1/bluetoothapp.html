@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bluetooth Controlled Car</title>
+    
+    <!-- Link the CSS file -->
+    <link rel="stylesheet" href="bluetoothapp.css">
+</head>
+<body>
+
+    <!-- Title Section -->
+    <div class="title-section">
+        <h1 class="main-title">College of Engineering Attingal (CEAL)</h1>
+        <h2 class="sub-title">Wireless Ev Charging System Along With Bluetooth Control Car</h2>
+    </div>
+
+    <div class="container">
+        <!-- Left Side: Lights and Horn -->
+        <div class="left-panel">
+            <div class="light-box">
+                <div class="light-label">Front Light</div>
+                <div class="light front-light"></div>
+                <div class="light back-light"></div>
+                <div class="light-label">Back Light</div>
+            </div>
+            <button id="horn">🔊 Horn</button>
+            <button onclick="this.name='CEAL'; window.location.href='http://www.ceattingal.ac.in/';">
+                🏫 CEAL
+            </button>
+            
+        </div>
+
+        <!-- Right Side: Car Controls -->
+        <div class="controls">
+            <button id="connectBtn">Connect your Bluetooth</button>
+            <button id="forward">▲</button>
+            <div>
+                <button id="left">◄</button>
+                <button id="stop">■</button>
+                <button id="right">►</button>
+            </div>
+            <button id="backward">▼</button>
+        </div>
+    </div>
+
+    <!-- Link the JavaScript file (placed before closing body tag) -->
+    <script src="script.js"></script>
+
+</body>
+</html>

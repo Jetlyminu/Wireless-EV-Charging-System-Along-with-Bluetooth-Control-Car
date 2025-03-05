@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+  <header>
+    <h1>Admin Dashboard</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="login.html">Logout</a>
+    </nav>
+  </header>
+
+  <section id="admin-content">
+    <h2>Manage Products</h2>
+    <!-- Example table listing products -->
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Price</th>
+          <th>Stock</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="productTable">
+        <!-- Data will be populated here via JavaScript -->
+        <tr>
+          <td>1</td>
+          <td>Product 1</td>
+          <td>$19.99</td>
+          <td>100</td>
+          <td>
+            <button>Edit</button>
+            <button>Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <script>
+    // You can add JavaScript here to fetch and manage products via your API.
+    // For example:
+    // fetch('http://localhost:5000/api/products')
+    //   .then(res => res.json())
+    //   .then(data => { ...populate your table... });
+  </script>
+</body>
+</html>
